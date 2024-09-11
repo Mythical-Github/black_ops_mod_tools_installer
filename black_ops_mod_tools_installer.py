@@ -17,7 +17,7 @@ urls = {
     "linker_mod": "https://github.com/Nukem9/LinkerMod/releases/download/v1.0.0-r/LinkerMod-1.0.0.zip",
     "end_message": "https://ia800201.us.archive.org/24/items/black_ops_mod_tools_installer_files/End_Message.txt",
     "shippuden_map_maker": "https://www.dropbox.com/scl/fi/2p6b2cz0qrx016i1dk5r1/shippuden_map_maker.zip?rlkey=govvk420tcrjnaafygzcj81o5&st=1u148a0h&dl=1",
-    "stock_models": "https://github.com/arrowsv/Black-Ops-1-Stock-Models/archive/refs/heads/main.zip",
+    "stock_models": "https://github.com/arrowsv/Black-Ops-1-Stock-Models/releases/download/v1.0/raw.7z",
     "dlc_models": "https://github.com/arrowsv/Black-Ops-1-DLC-Models/releases/download/v1.0/raw.7z",
     "waw_textures": "https://github.com/arrowsv/Black-Ops-1-WaW-Textures/releases/download/v1.0/raw.7z"
 }
@@ -119,7 +119,7 @@ def download_setup_files():
     download_file(urls['game_mod'], 'game_mod.zip')
     download_file(urls['linker_mod'], 'LinkerMod-1.0.0.zip')
     download_file(urls['end_message'], 'End_Message.txt')   
-    download_file(urls['stock_models'], 'main.zip')
+    download_file(urls['stock_models'], 'stock_models_raw.7z')
     download_file(urls['dlc_models'], 'dlc_models_raw.7z')
     download_file(urls['waw_textures'], 'waw_textures_raw.7z') 
 

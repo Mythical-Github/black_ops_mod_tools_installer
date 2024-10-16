@@ -20,12 +20,9 @@ Ville88 (Mod Tools Fix)\
 Treyarch & Activision (Game)\
 Valve (SteamCMD)\
 Marcin Glinski (Ascii Art)\
-Rik from SuperUser.com (Maximized Window Code Snippet)\
-Synthetic Programming (Youtube Coding Tutorial and Example Code)\
 5and5 (FTG BO Map Source Example and Video Tutorial)\
 Inferno Maartem (Creator of WaW FTG Map)\
 patorjk.com (Ascii Art)\
-ss64.com (Batch Command List)
 
 My Server Link:\
 https://discord.gg/EvUuAD4QvS

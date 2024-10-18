@@ -16,15 +16,13 @@ import enums as installer_enums
 init()
 
 # each install should have friendly name, download link, credits, install before or after converter
-
-
-urls = {
-    "mod_tools_file": "https://www.dropbox.com/scl/fi/fatp8vhnc6roed9iarc70/black_ops_one_mod_tool_files.zip?rlkey=eqgpda0ymp7bjr15laptbs8xu&st=sufknfp6&dl=1",
-    "game_mod": "https://github.com/Nukem9/LinkerMod/releases/download/v1.3.2/game_mod.zip",
-    "linker_mod": "https://github.com/Nukem9/LinkerMod/releases/download/v1.0.0-r/LinkerMod-1.0.0.zip",
-    "end_message": "https://ia800201.us.archive.org/24/items/black_ops_mod_tools_installer_files/End_Message.txt",
-    "shippuden_map_maker": "https://www.dropbox.com/scl/fi/2p6b2cz0qrx016i1dk5r1/shippuden_map_maker.zip?rlkey=govvk420tcrjnaafygzcj81o5&st=1u148a0h&dl=1"
-}
+# use pathlib for strings
+# error handling for everything
+# uses pyjson5
+# make sure all output is colorized via the json
+# get rid of big ass banner
+# pull important notes and things it installs from json
+# dev build scripts, for clonging and exe
 
 
 process_name = 'BlackOps.exe'
@@ -114,11 +112,6 @@ Important Notes:
 
 def download_setup_files():
     print('\nDownloading necessary files...')
-    download_file(urls['mod_tools_file'], 'black_ops_one_mod_tool_files.zip')
-    download_file(urls['shippuden_map_maker'], 'shippuden_map_maker.zip')
-    download_file(urls['game_mod'], 'game_mod.zip')
-    download_file(urls['linker_mod'], 'LinkerMod-1.0.0.zip')
-    download_file(urls['end_message'], 'End_Message.txt')    
 
 
 def extract_file_set_one():
@@ -167,7 +160,7 @@ def file_cleanup():
         print(f"Failed to remove temp directory: {e}")
     
 
-def main():
+def run_install():
     print_intro()
     download_setup_files()
     extract_file_set_one()
@@ -178,7 +171,3 @@ def main():
     extract_file_set_two()
     print_complete_message()
     file_cleanup()
-
-
-if __name__ == '__main__':
-    main()

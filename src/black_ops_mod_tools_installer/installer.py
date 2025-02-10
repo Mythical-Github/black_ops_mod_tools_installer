@@ -15,15 +15,6 @@ import enums as installer_enums
 
 init()
 
-# each install should have friendly name, download link, credits, install before or after converter
-# use pathlib for strings
-# error handling for everything
-# uses pyjson5
-# make sure all output is colorized via the json
-# get rid of big ass banner
-# pull important notes and things it installs from json
-# dev build scripts, for clonging and exe
-
 
 process_name = 'BlackOps.exe'
 

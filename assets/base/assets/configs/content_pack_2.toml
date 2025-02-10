@@ -1,0 +1,25 @@
+
+[dependency_config_structure]
+config_spec_version = 1.0
+config_version = 1.0
+display_name = "Example Dependency"
+sha_256_hash = "example_hash"
+download_links = ["https://example.com/download"]
+
+[dependency_config_structure.command]
+executable = "dependency_executable"
+executable_args = ["--flag", "--another"]
+
+[[dependency_config_structure.compatible_projects]]
+display_name = "Compatible Project"
+
+[[dependency_config_structure.compatible_games]]
+game_display_name = "Compatible Game"
+
+[[dependency_config_structure.pre_hook_commands]]
+executable = "pre_hook_command"
+executable_args = ["--pre", "--hook"]
+
+[[dependency_config_structure.post_hook_commands]]
+executable = "post_hook_command"
+executable_args = ["--post", "--hook"]

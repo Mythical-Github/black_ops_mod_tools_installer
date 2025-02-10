@@ -1,0 +1,25 @@
+
+
+To Do:
+    linux and windows
+    cli tool
+    use toml
+    has tui from trogon, or handmade if need be
+    colorized output
+    logging
+    localization
+    use pathlib for strings
+    add dev builld scripts
+    error handling for everything
+    when installing it will check a folder for tomls that have install options
+
+    each toml will have:
+        friendly name
+        one or more release download links
+        credits, 
+        if it should be placed before or after running the converter
+        summary/notes section to print out
+        if by default should be installed
+        estimated size taken up after install
+
+    option to have it install game + tools via steam cmd

@@ -7,16 +7,17 @@ import requests
 import subprocess
 from colorama import init, Fore, Style
 
+import gdown
 
 init()
 
 
 urls = {
-    "mod_tools_file": "https://www.dropbox.com/scl/fi/fatp8vhnc6roed9iarc70/black_ops_one_mod_tool_files.zip?rlkey=eqgpda0ymp7bjr15laptbs8xu&st=sufknfp6&dl=1",
+    "mod_tools_file": "https://drive.google.com/file/d/1nxYZZfiE8KVJQiJ3ed9-Y8tgi8Dz2QY7/view?usp=sharing",
     "game_mod": "https://github.com/Nukem9/LinkerMod/releases/download/v1.3.2/game_mod.zip",
     "linker_mod": "https://github.com/Nukem9/LinkerMod/releases/download/v1.0.0-r/LinkerMod-1.0.0.zip",
     "end_message": "https://ia800201.us.archive.org/24/items/black_ops_mod_tools_installer_files/End_Message.txt",
-    "shippuden_map_maker": "https://www.dropbox.com/scl/fi/2p6b2cz0qrx016i1dk5r1/shippuden_map_maker.zip?rlkey=govvk420tcrjnaafygzcj81o5&st=1u148a0h&dl=1"
+    "shippuden_map_maker": "https://drive.google.com/file/d/1N7hcNr2SMLfAS2Wru5QmqPj5hkFScUkE/view?usp=sharing"
 }
 
 
@@ -107,8 +108,8 @@ Important Notes:
 
 def download_setup_files():
     print('\nDownloading necessary files...')
-    download_file(urls['mod_tools_file'], 'black_ops_one_mod_tool_files.zip')
-    download_file(urls['shippuden_map_maker'], 'shippuden_map_maker.zip')
+    gdown.download(urls['mod_tools_file'], 'black_ops_one_mod_tool_files.zip', fuzzy=True)
+    gdown.download(urls['shippuden_map_maker'], 'shippuden_map_maker.zip', fuzzy=True)
     download_file(urls['game_mod'], 'game_mod.zip')
     download_file(urls['linker_mod'], 'LinkerMod-1.0.0.zip')
     download_file(urls['end_message'], 'End_Message.txt')    

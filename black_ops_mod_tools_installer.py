@@ -144,7 +144,10 @@ def print_complete_message():
 
 
 def open_game():
-    black_ops_path = f'{script_dir}/{process_name}'
+    black_ops_path = os.path.normpath(f'{script_dir}/{process_name}')
+    if not os.path.isfile(black_ops_path):
+        missing_exe_error = f'No black ops exe was found at the following location: "{black_ops_path}"'
+        raise FileNotFoundError(missing_exe_error)
     subprocess.run(black_ops_path)
     time.sleep(45)
 
